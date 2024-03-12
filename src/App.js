@@ -78,52 +78,60 @@ function App() {
         console.log("err", err.doc);
       });
   };
+  if (auth?.currentUser?.email) {
+    console.log(auth?.currentUser?.email);
+  }
 
-  return (
-    <>
+  
+    return (
+      <>
       <div style={{ textAlign: "center", width: "100vw" }}>
-        <Auth />
-      </div>
-      <div style={{ textAlign: "center" }}>
-        <input
-          placeholder="firstname..."
-          onChange={(e) => setFirstname(e.target.value)}
-        />
-        <input
-          placeholder="lastname..."
-          onChange={(e) => setLastname(e.target.value)}
-        />
-        <input
-          placeholder="Birth..."
-          onChange={(e) => setBirth(Number(e.target.value))}
-        />
-        <input
-          type="checkbox"
-          checked={mature}
-          onChange={(e) => setMature(e.target.checked)}
-        />
-        <label>Checked</label>
-        <button onClick={onsubmit}>Submit</button>
-      </div>
-      <div style={{ textAlign: "center" }}>
-        {userlist.map((user) => (
-          <>
-            <h1 style={{ color: user.Mathured ? "green" : "red" }}>
-              {user.Firstname} {user.Lastname}
-            </h1>
-            <p style={{ fontSize: "17px", fontWeight: "bold" }}>
-              Birth of Year: {user.Birth_of_year}
-            </p>
-            <button onClick={() => ondelete(user.id)}>Delete</button>
-          </>
-        ))}
-      </div>
-      <div style={{ textAlign: "center" }}>
-        <input type="file" onChange={(e) => setFileupload(e.target.files[0])} />
-        <button onClick={() => onupload()}>Upload file</button>
-      </div>
-    </>
-  );
-}
+          <Auth />
+        </div>
+        <div style={{ textAlign: "center" }}>
+          <input
+            placeholder="firstname..."
+            onChange={(e) => setFirstname(e.target.value)}
+          />
+          <input
+            placeholder="lastname..."
+            onChange={(e) => setLastname(e.target.value)}
+          />
+          <input
+            placeholder="Birth..."
+            onChange={(e) => setBirth(Number(e.target.value))}
+          />
+          <input
+            type="checkbox"
+            checked={mature}
+            onChange={(e) => setMature(e.target.checked)}
+          />
+          <label>Checked</label>
+          <button onClick={onsubmit}>Submit</button>
+        </div>
+        <div style={{ textAlign: "center" }}>
+          {userlist.map((user) => (
+            <>
+              <h1 style={{ color: user.Mathured ? "green" : "red" }}>
+                {user.Firstname} {user.Lastname}
+              </h1>
+              <p style={{ fontSize: "17px", fontWeight: "bold" }}>
+                Birth of Year: {user.Birth_of_year}
+              </p>
+              <button onClick={() => ondelete(user.id)}>Delete</button>
+            </>
+          ))}
+        </div>
+        <div style={{ textAlign: "center" }}>
+          <input
+            type="file"
+            onChange={(e) => setFileupload(e.target.files[0])}
+          />
+          <button onClick={() => onupload()}>Upload file</button>
+        </div>
+      </>
+    );
+  }
+
 
 export default App;
