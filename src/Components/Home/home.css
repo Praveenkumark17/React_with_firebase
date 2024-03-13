@@ -1,0 +1,263 @@
+body {
+  background: rgb(180, 159, 116);
+}
+.main-flex {
+  height: 90vh;
+  width: 94vw;
+  background-color: rgb(247, 231, 206);
+  border-radius: 10px;
+  margin: 5vh 3vw;
+  /* padding: 3vh 3vw; */
+  /* overflow-y: scroll; */
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  height: 80vh;
+  width: 90vw;
+  overflow: scroll;
+}
+.img {
+  width: 200px;
+}
+.mob-title {
+  display: none;
+}
+
+/* icons */
+.icon {
+  color: rgb(255, 79, 0);
+}
+
+/* main title */
+
+.title-out {
+  position: relative;
+  height: 200px;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  padding-top: 3vh;
+}
+.round-div {
+  overflow: hidden;
+  position: absolute;
+  height: 230px;
+  width: 200px;
+  background-color: aliceblue;
+  border: 5px solid rgb(255, 79, 0);
+  z-index: 1;
+}
+.title-div {
+  position: absolute;
+  z-index: 0;
+  height: 150px;
+  width: 90vw;
+  margin-left: 3vw;
+  background-color: rgb(255, 79, 0);
+  line-height: 1.7;
+}
+.title {
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 5vw;
+}
+.sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 5vw;
+}
+
+/* objectives */
+
+.object-out {
+  margin: 5vh 0;
+}
+.object {
+  margin-top: 2vh;
+  text-indent: 50px;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* name */
+
+.names {
+  font-size: 20px;
+  font-weight: 500;
+}
+.sub-name {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(255, 79, 0);
+  text-indent: 30px;
+}
+
+/* spical */
+
+.spical {
+  display: flex;
+}
+.spicals {
+  display: flex;
+  width: 70vw;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-top: 2vh;
+}
+.spical-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin-left: 5vw;
+  margin-top: 2vh;
+  font-weight: 500;
+  font-size: 16px;
+}
+.webs {
+  text-indent: 50px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* academic */
+
+.degree {
+  font-weight: 600;
+  font-size: 17px;
+  width: 80vw;
+}
+.edu {
+  margin-top: 2vh;
+  text-indent: 40px;
+}
+.year {
+  width: 10vw;
+  font-weight: 400;
+  float: right;
+  font-size: 16px;
+}
+.did {
+  font-weight: 400;
+}
+.d-name {
+  font-weight: 500;
+}
+
+/* line */
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(255, 79, 0);
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 426px) {
+  .main-flex {
+    height: 94vh;
+    width: 94vw;
+    margin: 3vh 3vw;
+    /* padding: 1vh 3vw; */
+    overflow: hidden;
+  }
+  .main {
+    height: 90vh;
+    width: 88vw;
+    overflow: scroll;
+  }
+  .img {
+    width: 90px;
+  }
+  .title-out {
+    height: 100px;
+    width: 88vw;
+  }
+  .title-div {
+    height: 70px;
+    width: 88vw;
+  }
+  .round-div {
+    height: 100px;
+    width: 90px;
+    border: 3px solid rgb(255, 79, 0);
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 15vw;
+  }
+  .sub-title {
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 15vw;
+  }
+
+  .line {
+    height: 2px;
+  }
+
+  .object-out {
+    margin: 2vh 0;
+  }
+  .object {
+    margin-top: 2vh;
+    text-indent: 50px;
+    font-weight: 500;
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .names {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .sub-name {
+    font-size: 15px;
+  }
+  .sub-list {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .spical {
+    display: block;
+  }
+  .spicals {
+    display: block;
+  }
+  .spical-flex {
+    display: block;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    width: 90%;
+  }
+  .web {
+    margin-top: 2vh;
+  }
+  .edu {
+    margin-top: 2vh;
+    text-indent: 0px;
+  }
+  .degree {
+    font-weight: 600;
+    font-size: 14px;
+    width: 68vw;
+  }
+  .year {
+    font-weight: 400;
+    float: right;
+    font-size: 14px;
+    width: 20vw;
+  }
+  .did {
+    font-weight: 400;
+  }
+  .d-name {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
