@@ -145,6 +145,76 @@ body {
   font-weight: 500;
 }
 
+/* work */
+
+.work-title {
+  font-size: 17px;
+  font-weight: 600;
+  width: 80vw;
+}
+.work-sub {
+  font-size: 16px;
+  font-weight: 500;
+}
+.work-year {
+  width: 20vw;
+  font-weight: 400;
+  float: right;
+  font-size: 16px;
+}
+.roll {
+  margin-top: 0.5vh;
+  font-size: 17px;
+  font-weight: 600;
+}
+.roll-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+.work-contant {
+  margin-top: 1.5vh;
+  text-indent: 70px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* contact */
+.contact {
+  margin-top: 2vh;
+  text-indent: 40px;
+}
+.contact-flex {
+  display: flex;
+}
+.cont1 {
+  margin-top: 1vh;
+  width: 50vw;
+}
+.cont2 {
+  margin-top: 1vh;
+  width: 90vw;
+}
+.cont-name{
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+}
+.cont-link{
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+}
+.cont-link:hover{
+  color: black;
+}
+.icons{
+  margin-right: 0.5vw;
+  color: rgb(255, 79, 0);
+  font-size: 17px;
+  margin-top: 1vh;
+}
+
 /* line */
 
 .line {
@@ -175,11 +245,11 @@ body {
   }
   .title-out {
     height: 100px;
-    width: 88vw;
+    width: 84vw;
   }
   .title-div {
     height: 70px;
-    width: 88vw;
+    width: 84vw;
   }
   .round-div {
     height: 100px;
@@ -259,5 +329,62 @@ body {
   .d-name {
     font-size: 13px;
     font-weight: 500;
+  }
+  .work-title {
+    font-size: 14px;
+    font-weight: 600;
+    width: 65vw;
+  }
+  .work-sub {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .work-year {
+    font-weight: 400;
+    float: right;
+    font-size: 14px;
+    width: 28vw;
+    margin-left: 15vw;
+  }
+  .roll {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .roll-name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .work-contant {
+    margin-top: 1vh;
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .contact {
+    margin-top: 2vh;
+    text-indent: 20px;
+  }
+  .contact-flex {
+    display: block;
+  }
+  .cont1 {
+    width: 80vw;
+  }
+  .cont2 {
+    margin-top: 1vh;
+    width: 85vw;
+  }
+  .cont-name{
+    font-size: 14px;
+  }
+  .cont-link{
+    font-size: 14px;
+  }
+  .icons{
+    margin-right: 2vw;
+    color: rgb(255, 79, 0);
+    font-size: 15px;
+    margin-top: 1vh;
   }
 }
