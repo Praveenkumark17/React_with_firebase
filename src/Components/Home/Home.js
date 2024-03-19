@@ -34,8 +34,8 @@ function Home() {
               justify="center"
               align="center"
             >
-              <div className="title">PRAVEENKUMAR K</div>
-              <div className="sub-title">FRONTEND DEVELOPER</div>
+              <div className="title" style={{color:"rgb(247, 231, 206)"}}>PRAVEENKUMAR K</div>
+              <div className="sub-title" style={{color:"rgb(247, 231, 206)"}}>FRONTEND DEVELOPER</div>
             </Flex>
           </div>
           <div className="object-out">
