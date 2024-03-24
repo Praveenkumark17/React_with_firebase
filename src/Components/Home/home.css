@@ -1,5 +1,7 @@
-body {
-  background: rgb(180, 159, 116);
+.home {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(152, 119, 54);
 }
 .main-flex {
   height: 90vh;
